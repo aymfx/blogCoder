@@ -3,7 +3,7 @@ export default [
     text: '笔记',
     items: [
       { text: 'leetcode', link: '/leetcode/index' },
-      { text: '前端', link: '/frontend/index' },
+      { text: '前端', link: '/frontend/清单' },
       { text: '后端', link: '/backend/index' }
     ]
   },
