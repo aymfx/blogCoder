@@ -6,12 +6,6 @@ export default [
     ]
   },
   {
-    text: '年终总结',
-    items: [
-      { text: '2020', link: '/home/2020年终总结.md' },
-    ]
-  },
-  {
     text: '读书观后感',
     items: [
       { text: '书单', link: '/home/书单.md' },
@@ -28,5 +22,17 @@ export default [
       { text: 'bug清单', link: '/tool/bugList.md' },
       
     ]
-  }
+  },
+  {
+    text: '年终总结',
+    items: [
+      { text: '2020', link: '/home/2020年终总结.md' },
+    ]
+  },
+  {
+    text: '面试',
+    items: [
+      { text: 'http基础', link: '/interview/http基础.md' },
+    ]
+  },
 ]
