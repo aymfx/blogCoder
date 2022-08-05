@@ -4,7 +4,7 @@ hero:
   name: aymfx‘s blog
   tagline: web前端开发者、十二的御用铲屎官。
   image:
-    src:
+    src: /logo.png
     alt: 头像
   actions:
     - theme: brand
