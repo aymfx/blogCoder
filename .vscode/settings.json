@@ -3,7 +3,7 @@
     "_site/**": true,
     ".github/**": true,
     ".jekyll-cache/**": true,
-    "node_modules": false,
+    "node_modules": true,
     "yarn.lock": true,
     ".gitignore": true
   }
