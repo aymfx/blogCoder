@@ -9,7 +9,7 @@ hero:
   actions:
     - theme: brand
       text: 开始探索
-      link: /home/主页
+      link: /主页/
     - theme: alt
       text: GitHub
       link: https://github.com/aymfx
