@@ -2,7 +2,10 @@ export default {
   '/主页/': [
     {
       text: '主页',
-      items: [{ text: '介绍', link: '/主页/' }],
+      items: [
+        { text: '说明', link: '/主页/' },
+        { text: '关于我', link: '/主页/关于我' },
+      ],
     },
     {
       text: '读书观后感',
@@ -37,6 +40,13 @@ export default {
         { text: '目录', link: '/面试/' },
         { text: 'http基础', link: '/面试/http基础.md' },
       ],
+    },
+  ],
+  '/记录/': [
+    {
+      text: '生活',
+      collapsible: true,
+      items: [{ text: '猫十二日常', link: '/记录/猫.md' }],
     },
   ],
 };
