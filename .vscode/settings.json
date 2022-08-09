@@ -5,6 +5,7 @@
     ".jekyll-cache/**": true,
     "node_modules": true,
     "yarn.lock": true,
-    ".gitignore": true
+    "*/.obsidian": true,
+    ".gitignore": false
   }
 }

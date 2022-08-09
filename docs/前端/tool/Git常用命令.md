@@ -18,10 +18,11 @@ ssh-keygen -o
 
 ```
 
-## 覆盖远程分支代码 强制
+## 覆盖远程分支代码 强制推送到远端。
 
 ``` shell
 
 git push --set-upstream origin dev -f
 
 ```
+

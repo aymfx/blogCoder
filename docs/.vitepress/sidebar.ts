@@ -1,5 +1,5 @@
 export default {
-  '/': [
+  '/主页/': [
     {
       text: '主页',
       items: [{ text: '介绍', link: '/主页/' }],
@@ -30,11 +30,11 @@ export default {
   ],
   '/面试/': [
     {
-      text: 'http',
+      text: 'HTTP',
       collapsible: true,
       items: [
-        { text: '说明', link: '/面试/' },
-        { text: '基础', link: '/面试/http基础.md' },
+        { text: '目录', link: '/面试/' },
+        { text: 'http基础', link: '/面试/http基础.md' },
       ],
     },
   ],
