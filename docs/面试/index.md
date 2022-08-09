@@ -2,6 +2,6 @@
 
 ## HTTP
 
-- [http 基础](/面试/http基础)
+- [http 基础](/面试/http基础.md)
 
 ## HTML
