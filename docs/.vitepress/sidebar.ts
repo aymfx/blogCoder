@@ -20,6 +20,7 @@ export default {
         { text: 'Git常用命令', link: '/前端/tool/Git常用命令.md' },
         { text: 'MongoDB命令', link: '/前端/tool/MongoDB命令.md' },
         { text: 'bug清单', link: '/前端/tool/bugList.md' },
+        { text: 'eslint 格式化', link: '/前端/tool/格式化.md' },
       ],
     },
     {
