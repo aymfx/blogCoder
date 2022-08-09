@@ -3,17 +3,8 @@ export default {
     {
       text: '主页',
       items: [
-        { text: '说明', link: '/主页/' },
-        { text: '关于我', link: '/主页/关于我' },
-      ],
-    },
-    {
-      text: '读书观后感',
-      collapsible: true,
-      items: [
-        { text: '书单', link: '/读书/书单.md' },
-        { text: '2021', link: '/读书/2021读书笔记.md' },
-        { text: '2020', link: '/读书/2020读书笔记.md' },
+        { text: "🤡 Aymfx's blog", link: '/主页/' },
+        { text: '🤗 关于我', link: '/主页/关于我' },
       ],
     },
     {
@@ -31,6 +22,15 @@ export default {
       collapsible: true,
       items: [{ text: '2020', link: '/主页/2020年终总结.md' }],
     },
+    {
+      text: '读书观后感',
+      collapsible: true,
+      items: [
+        { text: '书单', link: '/读书/书单.md' },
+        { text: '2021', link: '/读书/2021读书笔记.md' },
+        { text: '2020', link: '/读书/2020读书笔记.md' },
+      ],
+    },
   ],
   '/面试/': [
     {
@@ -40,13 +40,6 @@ export default {
         { text: '目录', link: '/面试/' },
         { text: 'http基础', link: '/面试/http基础.md' },
       ],
-    },
-  ],
-  '/记录/': [
-    {
-      text: '生活',
-      collapsible: true,
-      items: [{ text: '猫十二日常', link: '/记录/猫.md' }],
     },
   ],
 };
