@@ -2,8 +2,8 @@ import nav from './nav';
 import sidebar from './sidebar';
 
 export default {
-  title: "aymfx's blog",
-  description: '博客啊博客',
+  title: '爱编程',
+  description: '我的博客网站',
   themeConfig: {
     nav,
     sidebar,
