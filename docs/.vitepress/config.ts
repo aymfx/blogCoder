@@ -4,6 +4,7 @@ import sidebar from './sidebar';
 export default {
   title: '爱编程',
   description: '我的博客网站',
+  ignoreDeadLinks: true,
   themeConfig: {
     nav,
     sidebar,
@@ -21,7 +22,6 @@ export default {
       theme: 'material-palenight',
       lineNumbers: true,
     },
-    ignoreDeadLinks: true,
     lastUpdated: true,
     docFooter: {
       prev: '上一页',
