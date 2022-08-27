@@ -49,7 +49,7 @@ export default {
   '/源码分析/': [
     {
       text: '主页',
-      items: [{ text: 'TODO💪🏻', link: '/源码分析/index' }],
+      items: [{ text: 'TODO💪🏻', link: '/源码分析/' }],
     },
     {
       text: 'Vue2源码',
