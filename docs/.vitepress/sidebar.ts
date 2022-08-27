@@ -20,15 +20,19 @@ export default {
     {
       text: '年终总结',
       collapsible: true,
-      items: [{ text: '2020', link: '/主页/2020年终总结.md' }],
+      items: [
+        { text: '2021', link: '/主页/2021年终总结.md' },
+        { text: '2020', link: '/主页/2020年终总结.md' },
+      ],
     },
     {
       text: '读书观后感',
       collapsible: true,
       items: [
-        { text: '书单', link: '/读书/书单.md' },
-        { text: '2021', link: '/读书/2021读书笔记.md' },
-        { text: '2020', link: '/读书/2020读书笔记.md' },
+        { text: '我的书单', link: '/读书/书单.md' },
+        { text: '2022读书笔记', link: '/读书/2022读书笔记.md' },
+        { text: '2021读书笔记', link: '/读书/2021读书笔记.md' },
+        { text: '2020读书笔记', link: '/读书/2020读书笔记.md' },
       ],
     },
   ],
@@ -39,6 +43,22 @@ export default {
       items: [
         { text: '目录', link: '/面试/' },
         { text: 'http基础', link: '/面试/http基础.md' },
+      ],
+    },
+  ],
+  '/源码分析/': [
+    {
+      text: '主页',
+      items: [{ text: 'TODO💪🏻', link: '/源码分析/index' }],
+    },
+    {
+      text: 'Vue2源码',
+      items: [
+        { text: '前言', link: '/源码分析/vue2/前言.md' },
+        { text: '初始化-入口文件', link: '/源码分析/vue2/入口文件.md' },
+        { text: '初始化-initMixin', link: '/源码分析/vue2/initMixin.md' },
+        { text: '初始化-stateMixin', link: '/源码分析/vue2/stateMixin.md' },
+        { text: '初始化-eventsMixin', link: '/源码分析/vue2/eventsMixin.md' },
       ],
     },
   ],
