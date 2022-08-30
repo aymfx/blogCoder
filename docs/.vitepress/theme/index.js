@@ -7,6 +7,7 @@ import LyPage from './components/LyPage.vue';
 export default {
   ...DefaultTheme,
   NotFound,
+  // Layout,
   enhanceApp({ app }) {
     // register global components
     app.component('LyPage', LyPage);
