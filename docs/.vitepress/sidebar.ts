@@ -55,10 +55,31 @@ export default {
       text: 'Vue2源码',
       items: [
         { text: '前言', link: '/源码分析/vue2/前言.md' },
-        { text: '初始化-入口文件', link: '/源码分析/vue2/入口文件.md' },
-        { text: '初始化-initMixin', link: '/源码分析/vue2/initMixin.md' },
-        { text: '初始化-stateMixin', link: '/源码分析/vue2/stateMixin.md' },
-        { text: '初始化-eventsMixin', link: '/源码分析/vue2/eventsMixin.md' },
+        { text: 'Vue构造函数', link: '/源码分析/vue2/初始化操作/构造函数.md' },
+        {
+          text: 'initMixin()函数',
+          link: '/源码分析/vue2/初始化操作/initMixin.md',
+        },
+        {
+          text: 'stateMixin()函数',
+          link: '/源码分析/vue2/初始化操作/stateMixin.md',
+        },
+        {
+          text: 'eventsMixin()函数',
+          link: '/源码分析/vue2/初始化操作/eventsMixin.md',
+        },
+        {
+          text: 'lifecycleMixin()函数',
+          link: '/源码分析/vue2/初始化操作/lifecycleMixin.md',
+        },
+        {
+          text: 'renderMixin()函数',
+          link: '/源码分析/vue2/初始化操作/renderMixin.md',
+        },
+        {
+          text: 'initGlobalAPI()函数',
+          link: '/源码分析/vue2/初始化操作/initGlobalAPI.md',
+        },
       ],
     },
   ],

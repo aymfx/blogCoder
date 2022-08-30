@@ -27,7 +27,7 @@ export default {
       prev: '上一页',
       next: '下一页',
     },
-    socialLinks: [{ icon: 'github', link: 'https://github.com/aymf' }],
+    socialLinks: [{ icon: 'github', link: 'https://github.com/aymfx' }],
     footer: {
       message: 'Released under the MIT License.',
       copyright: 'Copyright © 2014-present aymfx',
