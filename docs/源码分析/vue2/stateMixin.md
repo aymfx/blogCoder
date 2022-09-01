@@ -1,5 +1,6 @@
 ---
-title: stateMixin分析
+title: 【初始化操作】stateMixin分析
+sort: 2
 ---
 
 > 该函数主要作用是在原型上挂载了几个属性和方法，方便实例对象调用

@@ -1,5 +1,6 @@
 ---
-title: renderMixin 分析
+title: 【初始化操作】renderMixin 分析
+sort: 5
 ---
 
 > 这里挂载了一些渲染方法 和一些私有的工具方法

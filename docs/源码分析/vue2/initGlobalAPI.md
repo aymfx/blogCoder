@@ -1,5 +1,6 @@
 ---
-title: initGlobalAPI分析
+title: 【初始化操作】initGlobalAPI分析
+sort: 6
 ---
 
 > 这个函数帮助 Vue 挂载了很多的全局方法和属性
@@ -263,6 +264,6 @@ export function initAssetRegisters(Vue: GlobalAPI) {
 // vue-analyse/src/platforms/web/runtime-with-compiler.ts
 Vue.compile = compileToFunctions;
 ```
+
 流程图
 ![20220829172009](https://raw.githubusercontent.com/aymfx/pic/mian/img/20220829172009.png)
-

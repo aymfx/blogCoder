@@ -1,24 +1,25 @@
 ---
-Title: brew安装nvm
+title: brew安装nvm
+sort: 2
 ---
 
-## 卸载nodeJS
+## 卸载 nodeJS
 
 ```shell
-brew uninstall --ignore-dependencies node 
+brew uninstall --ignore-dependencies node
 brew uninstall --force node
 ```
 
-## 安装nvm
+## 安装 nvm
 
 ```shell
-brew update 
-brew install nvm 
+brew update
+brew install nvm
 ```
 
 ## 创建环境
 
-- 创建.nvm文件夹
+- 创建.nvm 文件夹
 
 ```shell
 mkdir ~/.nvm
@@ -36,7 +37,7 @@ export NVM_DIR=~/.nvm
 source $(brew --prefix nvm)/nvm.sh
 ```
 
-然后按  **ESC + :wq** 文件
+然后按 **ESC + :wq** 文件
 
 - 最后执行文件
 
@@ -50,12 +51,11 @@ source ~/.bash_profile
 nvm -v
 ```
 
-## nvm命令行
+## nvm 命令行
 
 ```shell
 nvm install node //安装 node（最新的）
-nvm install 14   // 指定版本安装 
+nvm install 14   // 指定版本安装
 nvm use 14 //使用14版本
 nvm ls //查看所有版本
 ```
-

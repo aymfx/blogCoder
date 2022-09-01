@@ -1,5 +1,6 @@
 ---
-title: lifecycleMixin 分析
+title: 【初始化操作】lifecycleMixin 分析
+sort: 4
 ---
 
 > 这个方法帮助 Vue 构造函数挂载了实例和生命周期相关的方法
