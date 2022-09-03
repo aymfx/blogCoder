@@ -155,7 +155,7 @@ fs.stat('./b.js', (err, stats) => {
 
 由于平台的不统一性，我们可以用 path 实现统一的操作
 
-**从路径中获取信息**
+### 从路径中获取信息
 
 - `dirname`: 获取文件的父文件夹。
 - `basename`: 获取文件名部分。
@@ -168,7 +168,7 @@ console.log(path.dirname(notes), path.basename(notes), path.extname(notes)); //u
 console.log(path.basename(notes, path.extname(notes))); //notes
 ```
 
-**使用路径**
+### 使用路径
 
 - `path.join()` 用于连接路径的两个或者多个片段
 
@@ -190,7 +190,7 @@ console.log(path.basename(notes, path.extname(notes))); //notes
 
   - `ext`: 文件扩展名
 
-**readFile 和 readFileSync 读取文件**
+### readFile 和 readFileSync 读取文件
 
 这意味着大文件会对内存的消耗和程序执行的速度产生重大的影响。
 
@@ -207,7 +207,7 @@ const res = fs.readFileSync('./test.txt', 'utf-8');
 console.log(res);
 ```
 
-**writeFile 和 writeFileSync 操作**
+### writeFile 和 writeFileSync 操作
 
 - `r+` 打开文件用于读写。
 - `w+` 打开文件用于读写，将流定位到文件的开头。如果文件不存在则创建文件。
@@ -235,7 +235,7 @@ fs.appendFile('./test.txt', text, (err) => {
 fs.writeFileSync('./test.txt', text);
 ```
 
-**检查文件夹是否存在**
+### 检查文件夹是否存在
 
 使用 `fs.access()` 检查文件夹是否存在以及 Node.js 是否具有访问权限。
 
@@ -246,7 +246,7 @@ access('./aa', constants.R_OK, (err, info) => {
 });
 ```
 
-**创建新的文件夹**
+### 创建新的文件夹
 
 使用 `fs.mkdir()` 或 `fs.mkdirSync()` 可以创建新的文件夹。
 
@@ -264,7 +264,7 @@ function createDir(name) {
 createDir('dist');
 ```
 
-**读取目录的内容**
+### 读取目录的内容
 
 使用 `fs.readdir()` 或 `fs.readdirSync()` 可以读取目录的内容。
 
@@ -277,7 +277,7 @@ readdir('dist', (err, info) => {
 }); //null [ 'a.js' ]
 ```
 
-**重命名文件夹**
+### 重命名文件夹
 
 使用 `fs.rename()` 或 `fs.renameSync()` 可以重命名文件夹。 第一个参数是当前的路径，第二个参数是新的路径
 
@@ -298,7 +298,7 @@ renameSync('dist', 'build', (err, info) => {
 }); //null [ 'a.js' ]
 ```
 
-**删除文件夹**
+### 删除文件夹
 
 使用 `fs.rmdir()` 或 `fs.rmdirSync()` 可以删除文件夹。
 
@@ -347,4 +347,28 @@ rmdirSync('build', { recursive: true }, (err, info) => {
 - `fs.watchFile()`: 开始监视文件上的更改。相关方法：`fs.watch()`。
 - `fs.writeFile()`: 将数据写入文件。相关方法：`fs.write()`。
 
+### 软件包版本
 
+鉴于使用了 semver（语义版本控制），所有的版本都有 3 个数字，第一个是主版本，第二个是次版本，第三个是补丁版本
+
+- 如果写入的是 `〜0.13.0`，则只更新补丁版本：即 `0.13.1` 可以，但 `0.14.0` 不可以。
+- 如果写入的是 `^0.13.0`，则要更新补丁版本和次版本：即 `0.13.1`、`0.14.0`、依此类推。
+- 如果写入的是 `0.13.0`，则始终使用确切的版本。
+
+当发布新的版本时，不仅仅是随心所欲地增加数字，还要遵循以下规则
+
+- 当进行不兼容的 API 更改时，则升级主版本。
+- 当以向后兼容的方式添加功能时，则升级次版本。
+- 当进行向后兼容的缺陷修复时，则升级补丁版本。
+
+规则符号的含义
+
+- `^`: 只会执行不更改最左边非零数字的更新。 如果写入的是 `^0.13.0`，则当运行 `npm update` 时，可以更新到 `0.13.1`、`0.13.2` 等，但不能更新到 `0.14.0` 或更高版本。 如果写入的是 `^1.13.0`，则当运行 `npm update` 时，可以更新到 `1.13.1`、`1.14.0` 等，但不能更新到 `2.0.0` 或更高版本。
+- `~`: 如果写入的是 `〜0.13.0`，则当运行 `npm update` 时，会更新到补丁版本：即 `0.13.1` 可以，但 `0.14.0` 不可以。
+- `>`: 接受高于指定版本的任何版本。
+- `>=`: 接受等于或高于指定版本的任何版本。
+- `<=`: 接受等于或低于指定版本的任何版本。
+- `<`: 接受低于指定版本的任何版本。
+- `=`: 接受确切的版本。
+- `-`: 接受一定范围的版本。例如：`2.1.0 - 2.6.2`。
+- `||`: 组合集合。例如 `< 2.1 || > 2.6`。
