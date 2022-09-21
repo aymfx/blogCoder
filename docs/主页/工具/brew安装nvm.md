@@ -1,6 +1,5 @@
 ---
 title: brew安装nvm
-sort: 2
 ---
 
 ## 卸载 nodeJS

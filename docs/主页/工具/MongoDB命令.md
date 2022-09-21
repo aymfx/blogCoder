@@ -1,6 +1,5 @@
 ---
 title: MongoDB命令
-sort: 5
 ---
 
 ## 切换和创建数据库

@@ -1,6 +1,5 @@
 ---
 title: node内置模块
-sort: 6
 ---
 
 ## Events
