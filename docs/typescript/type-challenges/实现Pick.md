@@ -18,3 +18,10 @@ const todo: TodoPreview = {
   completed: false,
 };
 ```
+
+``` typescript
+type MyPick<T, P extends keyof T> = {
+  [K in P]: T[K];
+};
+```
+

@@ -20,3 +20,10 @@ const todo: MyReadonly<Todo> = {
 todo.title = 'Hello'; // Error: cannot reassign a readonly property
 todo.description = 'barFoo'; // Error: cannot reassign a readonly property
 ```
+
+```typescript
+type MyReadonly<T> = {
+  readonly [K in keyof T]:T[K]
+}
+```
+
