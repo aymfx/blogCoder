@@ -14,6 +14,14 @@ export default [
         text: '元组转换为对象',
         link: '/typescript/type-challenges/元组转换为对象.md',
       },
+      {
+        text: '第一个元素',
+        link: '/typescript/type-challenges/第一个元素.md',
+      },
+      {
+        text: '获取元组长度',
+        link: '/typescript/type-challenges/获取元组长度.md',
+      },
     ],
   },
 ];
