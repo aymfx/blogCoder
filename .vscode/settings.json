@@ -7,7 +7,6 @@
     "deploy.sh": true,
     "yarn.lock": true,
     "package.json": false,
-    "*/.obsidian": true,
     ".gitignore": true
   }
 }

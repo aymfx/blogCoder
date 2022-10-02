@@ -5,6 +5,10 @@ export default {
   title: '爱编程',
   description: '我的博客网站',
   ignoreDeadLinks: true,
+  base:
+    process.env.NODE_ENV !== 'production'
+      ? '/'
+      : '//cdn.jsdelivr.net/gh/aymfx/blogCoder@gh-pages/',
   themeConfig: {
     nav,
     sidebar,
