@@ -4,8 +4,10 @@
     ".github/**": true,
     ".jekyll-cache/**": true,
     "node_modules": true,
+    "deploy.sh": true,
     "yarn.lock": true,
+    "package.json": false,
     "*/.obsidian": true,
-    ".gitignore": false
+    ".gitignore": true
   }
 }
