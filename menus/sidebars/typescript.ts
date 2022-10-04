@@ -1,6 +1,7 @@
 export default [
   {
-    text: 'type-challenges',
+    text: 'easy',
+    collapsible: true,
     items: [
       {
         text: '实现 Pick',
@@ -21,6 +22,52 @@ export default [
       {
         text: '获取元组长度',
         link: '/typescript/type-challenges/获取元组长度.md',
+      },
+      {
+        text: 'Awaited',
+        link: '/typescript/type-challenges/Awaited.md',
+      },
+      {
+        text: 'Exclude',
+        link: '/typescript/type-challenges/Exclude.md',
+      },
+      {
+        text: 'If',
+        link: '/typescript/type-challenges/If.md',
+      },
+      {
+        text: 'Concat',
+        link: '/typescript/type-challenges/Concat.md',
+      },
+      {
+        text: 'Includes',
+        link: '/typescript/type-challenges/Includes.md',
+      },
+      {
+        text: 'Push',
+        link: '/typescript/type-challenges/Push.md',
+      },
+      {
+        text: 'Unshift',
+        link: '/typescript/type-challenges/Unshift.md',
+      },
+      {
+        text: 'Parameters',
+        link: '/typescript/type-challenges/Parameters.md',
+      },
+    ],
+  },
+  {
+    text: 'mid',
+    collapsible: true,
+    items: [
+      {
+        text: '获取函数返回类型',
+        link: '/typescript/type-challenges/获取函数返回类型.md',
+      },
+      {
+        text: '实现 Omit',
+        link: '/typescript/type-challenges/实现Omit.md',
       },
     ],
   },
