@@ -2,7 +2,7 @@
 import DefaultTheme from 'vitepress/theme';
 import Layout from './Layout.vue';
 import NotFound from './NotFound.vue';
-import LyPage from './components/LyPage.vue';
+import Home from './components/Home.vue';
 
 export default {
   ...DefaultTheme,
@@ -10,6 +10,6 @@ export default {
   Layout,
   enhanceApp({ app }) {
     // register global components
-    app.component('LyPage', LyPage);
+    app.component('LYHome', Home);
   },
 };

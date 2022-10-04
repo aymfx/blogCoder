@@ -3,22 +3,14 @@ import sidebar from './sidebar';
 
 export default {
   title: '爱编程',
-  description: '我的博客网站',
+  description: 'aymfx、博客、编程、分享',
   ignoreDeadLinks: true,
   base: '/',
   themeConfig: {
+    logo: '/logo.png',
+    siteTitle: 'aymfx\'s blog',
     nav,
     sidebar,
-    head: [
-      [
-        'link',
-        {
-          rel: 'preconnect',
-          href: 'https://fonts.gstatic.com',
-          crossorigin: '',
-        },
-      ],
-    ],
     markdown: {
       theme: 'material-palenight',
       lineNumbers: true,
