@@ -1,6 +1,7 @@
 export default [
   {
     text: '入口文件初始化',
+    collapsible: true,
     items: [
       {
         text: 'Vue 构造函数',
@@ -34,6 +35,7 @@ export default [
   },
   {
     text: '双向绑定',
+    collapsible: true,
     items: [
       {
         text: '核心思想',

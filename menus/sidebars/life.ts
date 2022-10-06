@@ -1,6 +1,7 @@
 export default [
   {
     text: '旅游',
+    collapsible: true,
     items: [
       {
         text: '长沙游记',
@@ -10,6 +11,7 @@ export default [
   },
   {
     text: '猫',
+    collapsible: true,
     items: [
       {
         text: '猫十二',

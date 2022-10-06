@@ -14,6 +14,7 @@ export default [
   },
   {
     text: '工具',
+    collapsible: true,
     items: [
       {
         text: 'prettier +vscode',
