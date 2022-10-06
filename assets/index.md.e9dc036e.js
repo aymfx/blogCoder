@@ -1,0 +1,1 @@
+import{_ as t,c as a,a as o,o as n,r}from"./app.02cf27c0.js";const u=JSON.parse('{"title":"","description":"","frontmatter":{"layout":"page"},"headers":[],"relativePath":"index.md"}'),s={name:"index.md"};function c(p,d,_,i,m,l){const e=r("LYHome");return n(),a("div",null,[o(e)])}var x=t(s,[["render",c]]);export{u as __pageData,x as default};
