@@ -69,6 +69,14 @@ export default [
         text: '实现 Omit',
         link: '/typescript/type-challenges/实现Omit.md',
       },
+      {
+        text: '实现 Readonly 2',
+        link: '/typescript/type-challenges/Readonly2.md',
+      },
+      {
+        text: '元组转合集',
+        link: '/typescript/type-challenges/元组转合集.md',
+      },
     ],
   },
 ];
