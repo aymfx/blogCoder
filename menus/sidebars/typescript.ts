@@ -1,5 +1,19 @@
 export default [
   {
+    text: '文档笔记',
+    collapsible: true,
+    items: [
+      {
+        text: '常见类型',
+        link: '/typescript/笔记/常见类型.md',
+      },
+      {
+        text: '类型收窄',
+        link: '/typescript/笔记/类型收窄.md',
+      },
+    ],
+  },
+  {
     text: 'easy',
     collapsible: true,
     items: [
