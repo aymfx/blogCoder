@@ -24,7 +24,7 @@
 .LyMain{
   width: 100vw;
   height: 100vh;
-  background: url(https://cdn.jsdelivr.net/gh/aymfx/pic/img/Home-2022-10-04-13-43-42.jpg) no-repeat center center;
+  background: url(https://cdn.jsdelivr.net/gh/aymfx/pic/img/关于我-2022-11-16-15-37-47.jpg) no-repeat center center;
   display: flex;
   align-items: center;
   justify-content: center;
