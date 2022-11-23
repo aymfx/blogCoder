@@ -6,8 +6,6 @@ export default [
     items: [
       { text: 'vue2源码分析', link: '/vue2/' },
       { text: 'typescript', link: '/typescript/' },
-      // { text: '算法题', link: '/算法题/' },
-      // { text: '面试', link: '/面试/' },
     ],
   },
 ];
