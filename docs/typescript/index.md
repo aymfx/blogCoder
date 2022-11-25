@@ -1,7 +1,7 @@
 ---
 title: typescript
 date: 2000-10-01
-group: 序
+group: 序言
 ---
 
 ::: tips

@@ -26,10 +26,6 @@ const getAllFilePath = (navName) => {
         } else {
           sidebar[`/${navName}/`].unshift({ text: group, items: [] })
         }
-
-      }
-      if (name.includes('index.md')) {
-        title = '😁'
       }
       this.push({ navName, title, date, group, path, name, relativePath })
     }
