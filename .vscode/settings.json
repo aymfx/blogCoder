@@ -3,7 +3,7 @@
     "_site/**": true,
     ".github/**": true,
     ".jekyll-cache/**": true,
-    "node_modules": true,
+    "node_modules": false,
     "deploy.sh": true,
     "yarn.lock": true,
     "package.json": false,

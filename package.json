@@ -8,18 +8,21 @@
   "scripts": {
     "dev": "vitepress dev docs",
     "ci": "sh deploy.sh",
-    "docs:build": "vitepress build docs",
+    "docs:build": "node walk && vitepress build docs",
     "docs:serve": "vitepress serve docs"
   },
   "devDependencies": {
     "front-matter": "^4.0.2",
+    "fs-extra": "^10.1.0",
+    "klaw": "^4.0.1",
     "sass": "^1.54.3",
+    "through2": "^4.0.2",
     "vitepress": "^1.0.0-alpha.29",
     "vue": "^3.2.45",
     "walk": "^2.3.15"
   },
   "dependencies": {
     "@algolia/client-search": "^4.9.1",
-    "dayjs": "^1.11.5"
+    "dayjs": "^1.11.6"
   }
 }

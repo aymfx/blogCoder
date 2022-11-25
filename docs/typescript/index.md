@@ -1,5 +1,7 @@
 ---
 title: typescript
+date: 2000-10-01
+group: 序
 ---
 
 ::: tips

@@ -1,5 +1,7 @@
 ---
 title: MongoDB命令
+date: 2020-10-20
+group: 工具
 ---
 
 ## 切换和创建数据库
@@ -30,7 +32,7 @@ title: MongoDB命令
 
 - db.user.find();
 
-## 查询去掉后的当前聚集集合中的某列的重复数据   会过滤掉 name 中的相同数据
+## 查询去掉后的当前聚集集合中的某列的重复数据 会过滤掉 name 中的相同数据
 
 - db.user.distinct("name");
 
@@ -54,19 +56,19 @@ title: MongoDB命令
 
 - db.user.find({age: {$lte: 25}});
 
-## 查询 age >= 23 并且 age <= 26  注意书写格式
+## 查询 age >= 23 并且 age <= 26 注意书写格式
 
-- db.user.find({age: {$gte: 23, $lte: 26}}); 
+- db.user.find({age: {$gte: 23, $lte: 26}});
 
-## 查询 name 中包含 mongo 的数据  模糊查询用于搜索
+## 查询 name 中包含 mongo 的数据 模糊查询用于搜索
 
 - db.user.find({name: /mongo/});
 
-## 查询 name 中以 mongo 开头的 
+## 查询 name 中以 mongo 开头的
 
 - db.user.find({name: /^mongo/});
 
-## 查询指定列 name、age 数据  
+## 查询指定列 name、age 数据
 
 - db.user.find({}, {name: 1, age: 1});
 
@@ -95,7 +97,7 @@ title: MongoDB命令
 
 - db.user.find().limit(10).skip(5);
 
-可用于分页，limit 是 pageSize，skip 是(page-1)*pageSize
+可用于分页，limit 是 pageSize，skip 是(page-1)\*pageSize
 
 ## or 与 查询
 
@@ -125,13 +127,13 @@ title: MongoDB命令
 
 - db.student.update({"sex":"男"},{$set:{"age":33}},{multi: true});
 
-## 完整替换，不出现$set关键字
+## 完整替换，不出现$set 关键字
 
 - db.student.update({"name":"小明"},{"name":"大明","age":16});
 
 ## 操作加
 
-- db.users.update({name: 'Lisi'}, {$inc: {age: 50}}, false, true); 
+- db.users.update({name: 'Lisi'}, {$inc: {age: 50}}, false, true);
 
 相当于:update users set age = age + 50 where name = ‘Lisi’;
 
@@ -142,11 +144,9 @@ title: MongoDB命令
 ## 删除数据
 
 - db.collectionsNames.remove( { "borough": "Manhattan" } )
--  db.users.remove({age: 132});
+- db.users.remove({age: 132});
 
 - db.restaurants.remove( { "borough": "Queens" }, { justOne: true } ) 默认删除一条
-
-
 
 ## 索引基础
 
@@ -164,7 +164,7 @@ title: MongoDB命令
 
 - db.user.dropIndex({"username":1})
 
-## 在 MongoDB 中，我们同样可以创建复合索引 
+## 在 MongoDB 中，我们同样可以创建复合索引
 
 如:数字 1 表示 username 键的索引按升序存储，-1 表示 age 键的索引按照降序方式存储。
 
@@ -182,11 +182,9 @@ title: MongoDB命令
 
 - db.user.ensureIndex({"userid":1},{"unique":true})
 
-
-
 ![img](https://cdn.nlark.com/yuque/0/2021/png/2479971/1624777268494-238af6ec-741b-4f81-8145-56859c6011c7.png)
 
-## 使用 explain  explain 会返回查询使用的索引情况，耗时和扫描文档数的统计信息。
+## 使用 explain explain 会返回查询使用的索引情况，耗时和扫描文档数的统计信息。
 
 - db.tablename.find().explain( "executionStats" )
 
@@ -197,7 +195,7 @@ title: MongoDB命令
 ## 第一步创建超级管理用户
 
 ```javascript
-use admin 
+use admin
 db.createUser({
 user:'admin',
 pwd:'123456', roles:[{role:'root',db:'admin'}]
@@ -236,21 +234,21 @@ roles: [ { role: "dbOwner", db: "eggcms" } ]
 
 ## Mongodb 账户权限配置中常用的命令
 
-- show users;  #查看当前库下的用户
+- show users; #查看当前库下的用户
 - db.dropUser("eggadmin") #删除用户
 
 - db.updateUser( "admin",{pwd:"password"}); #修改用户密码
-- db.auth("admin","password");  #密码认证
+- db.auth("admin","password"); #密码认证
 
 ## Mongodb 数据库角色
 
-1.数据库用户角色:read、readWrite; 
+1.数据库用户角色:read、readWrite;
 
-2.数据库管理角色:dbAdmin、dbOwner、userAdmin; 
+2.数据库管理角色:dbAdmin、dbOwner、userAdmin;
 
-3.集群管理角色:clusterAdmin、clusterManager、clusterMonitor、hostManager; 
+3.集群管理角色:clusterAdmin、clusterManager、clusterMonitor、hostManager;
 
-4.备份恢复角色:backup、restore; 
+4.备份恢复角色:backup、restore;
 
 5.所有数据库角色:readAnyDatabase、readWriteAnyDatabase、userAdminAnyDatabase、 dbAdminAnyDatabase
 
@@ -260,13 +258,9 @@ roles: [ { role: "dbOwner", db: "eggcms" } ]
 
 const url = 'mongodb://admin:123456@localhost:27017/';
 
-
-
 ## MongoDB 聚合管道
 
 使用聚合管道可以对集合中的文档进行变换和组合。表关联查询、数据的统计。
-
-
 
 ![img](https://cdn.nlark.com/yuque/0/2021/png/2479971/1624783966849-d19c6a3a-2e9f-434f-8174-7d61db6547d3.png)
 
@@ -288,8 +282,6 @@ const url = 'mongodb://admin:123456@localhost:27017/';
 
 例如{$match:{status:"A"}}，$match 称为管道操作符，而 status:"A"称为管道表达式， 是管道操作符的操作数(Operand)。
 
-
-
 | 常用表达式操作符 | Description            |
 | ---------------- | ---------------------- |
 | $addToSet        | 将文档指定字段的值去重 |
@@ -310,18 +302,18 @@ db.order_item.insert({"order_id":"2","title":"牛奶","price":50,num:1}) db.orde
 db.order_item.insert({"order_id":"3","title":"矿泉水","price":2,num:5}) db.order_item.insert({"order_id":"3","title":"毛巾","price":10,num:1})
 ```
 
-
-
-- $project 
+- $project
 
 修改文档的结构，可以用来重命名、增加或删除文档中的字段。
 
 要求查找 order 只返回文档中 trade_no 和 all_price 字段
 
 ```javascript
-db.order.aggregate([ {
-$project:{ trade_no:1, all_price:1 } }
-])
+db.order.aggregate([
+  {
+    $project: { trade_no: 1, all_price: 1 },
+  },
+]);
 ```
 
 - match
@@ -329,11 +321,14 @@ $project:{ trade_no:1, all_price:1 } }
 用于过滤文档。用法类似于 find() 方法中的参数。
 
 ```javascript
-db.order.aggregate([ {
-$project:{ trade_no:1, all_price:1 } },
-{
-$match:{"all_price":{$gte:90}}
-} ])
+db.order.aggregate([
+  {
+    $project: { trade_no: 1, all_price: 1 },
+  },
+  {
+    $match: { all_price: { $gte: 90 } },
+  },
+]);
 ```
 
 - $group
@@ -343,11 +338,11 @@ $match:{"all_price":{$gte:90}}
 统计每个订单的订单数量，按照订单号分组
 
 ```javascript
-db.order_item.aggregate( [
-{
-$group: {_id: "$order_id", total: {$sum: "$num"}}
-} ]
-)
+db.order_item.aggregate([
+  {
+    $group: { _id: '$order_id', total: { $sum: '$num' } },
+  },
+]);
 ```
 
 - $sort
@@ -355,46 +350,60 @@ $group: {_id: "$order_id", total: {$sum: "$num"}}
 将集合中的文档进行排序。
 
 ```javascript
-db.order.aggregate([ {
-$project:{ trade_no:1, all_price:1 } },
-{
-$match:{"all_price":{$gte:90}}
-}, {
-$sort:{"all_price":-1} }
-])
+db.order.aggregate([
+  {
+    $project: { trade_no: 1, all_price: 1 },
+  },
+  {
+    $match: { all_price: { $gte: 90 } },
+  },
+  {
+    $sort: { all_price: -1 },
+  },
+]);
 ```
 
 - $limit
 
 ```javascript
-db.order.aggregate([ {
-$project:{ trade_no:1, all_price:1 } },
-{
-$match:{"all_price":{$gte:90}}
-}, {
-$sort:{"all_price":-1} },
-{
-$limit:1
-} ])
+db.order.aggregate([
+  {
+    $project: { trade_no: 1, all_price: 1 },
+  },
+  {
+    $match: { all_price: { $gte: 90 } },
+  },
+  {
+    $sort: { all_price: -1 },
+  },
+  {
+    $limit: 1,
+  },
+]);
 ```
 
 - $skip
 
 ```javascript
-db.order.aggregate([ 
-{$project:{ trade_no:1, all_price:1 } },
-{$match:{"all_price":{$gte:90}}}, 
-{$sort:{"all_price":-1} },
-{$skip:1}])
+db.order.aggregate([
+  { $project: { trade_no: 1, all_price: 1 } },
+  { $match: { all_price: { $gte: 90 } } },
+  { $sort: { all_price: -1 } },
+  { $skip: 1 },
+]);
 ```
 
 - $lookup 表关联
 
 ```javascript
-db.order.aggregate([ {
-$lookup: {
-from: "order_item",
-localField: "order_id", foreignField: "order_id", as: "items"
-} }
-])
+db.order.aggregate([
+  {
+    $lookup: {
+      from: 'order_item',
+      localField: 'order_id',
+      foreignField: 'order_id',
+      as: 'items',
+    },
+  },
+]);
 ```

@@ -1,5 +1,7 @@
 ---
 title: brew安装nvm
+date: 2020-10-23
+group: 工具
 ---
 
 ## 卸载 nodeJS

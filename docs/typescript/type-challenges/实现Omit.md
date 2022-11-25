@@ -1,4 +1,10 @@
-# 不使用 Omit 实现 TypeScript 的 Omit\<T, K> 泛型。 Omit 会创建一个省略 K 中字段的 T 对象。
+---
+title: 实现Omit
+date: 2020-10-04
+group: type-challenges
+---
+
+## 不使用 Omit 实现 TypeScript 的 Omit\<T, K> 泛型。 Omit 会创建一个省略 K 中字段的 T 对象。
 
 ```typescript
 interface Todo {

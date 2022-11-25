@@ -1,3 +1,9 @@
+---
+title: Parameters
+date: 2020-10-14
+group: type-challenges
+---
+
 # 实现内置的 Parameters 类型，而不是直接使用它
 
 ```typescript

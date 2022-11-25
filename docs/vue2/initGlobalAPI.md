@@ -1,5 +1,7 @@
 ---
 title: 【初始化操作】initGlobalAPI分析
+date: 2022-10-07
+group: 初始化
 ---
 
 > 这个函数帮助 Vue 挂载了很多的全局方法和属性

@@ -1,5 +1,7 @@
 ---
 title: 【初始化操作】initMixin分析
+date: 2022-10-02
+group: 初始化
 ---
 
 > 该函数主要做的一件事就是在 Vue 构造函数上面挂载了一个私有的方法 Vue.prototype.\_init,它会在实例化的时候自动被调用。

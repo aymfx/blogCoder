@@ -1,4 +1,10 @@
-# 不要使用内置的`Readonly<T>`，自己实现一个。
+---
+title: 实现Readonly
+date: 2020-10-06
+group: type-challenges
+---
+
+## 不要使用内置的`Readonly<T>`，自己实现一个。
 
 该 `Readonly` 会接收一个 _泛型参数_，并返回一个完全一样的类型，只是所有属性都会被 `readonly` 所修饰。
 
@@ -23,7 +29,6 @@ todo.description = 'barFoo'; // Error: cannot reassign a readonly property
 
 ```typescript
 type MyReadonly<T> = {
-  readonly [K in keyof T]:T[K]
-}
+  readonly [K in keyof T]: T[K];
+};
 ```
-

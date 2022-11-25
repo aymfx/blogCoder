@@ -6,6 +6,7 @@ import './styles/components/custom-block.css';
 import './styles/components/vp-code.css';
 import './styles/components/vp-doc.css';
 import './styles/components/vp-sponsor.css';
+import VPBadge from './components/VPBadge.vue';
 import Layout from './Layout.vue';
 import NotFound from './NotFound.vue';
 export { default as VPHomeHero } from './components/VPHomeHero.vue';
@@ -18,6 +19,9 @@ export { default as VPTeamPageSection } from './components/VPTeamPageSection.vue
 export { default as VPTeamMembers } from './components/VPTeamMembers.vue';
 const theme = {
     Layout,
-    NotFound
+    NotFound,
+    enhanceApp: ({ app }) => {
+        app.component('Badge', VPBadge);
+    }
 };
 export default theme;
