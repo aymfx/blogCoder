@@ -3,10 +3,13 @@
     "_site/**": true,
     ".github/**": true,
     ".jekyll-cache/**": true,
-    "node_modules": false,
+    "node_modules": true,
+    "docs/.vitepress": false,
     "deploy.sh": true,
     "yarn.lock": true,
-    "package.json": false,
+    "package.json": true,
+    "pnpm-lock.yaml": true,
+    "walk.js": true,
     ".gitignore": true
   },
   "workbench.colorCustomizations": {

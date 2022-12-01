@@ -22,7 +22,7 @@ export default {
     },
     socialLinks: [{ icon: 'github', link: 'https://github.com/aymfx' }],
     footer: {
-      message: 'Released under the MIT License.',
+      message: '<a href="https://beian.miit.gov.cn/" target="_blank">赣ICP备16012127号-1</a>',
       copyright: 'Copyright © 2014-present aymfx',
     },
     lastUpdatedText: '最后更新时间',
