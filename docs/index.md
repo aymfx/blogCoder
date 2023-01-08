@@ -1,5 +1,0 @@
----
-layout: page
----
-
-<LYHome></LYHome>
