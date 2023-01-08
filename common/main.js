@@ -31,5 +31,6 @@ window.$docsify = {
         color: 'rgb(90,90,90)',
         language: 'chinese'
     },
+    loadFooter: '_footer.md',
 }
 

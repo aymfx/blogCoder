@@ -1,7 +1,7 @@
 {
   "files.exclude": {
     ".nojekyll": true,
-    "common": true,
+    "common": false,
     "CNAME": true
   },
   "workbench.colorCustomizations": {
